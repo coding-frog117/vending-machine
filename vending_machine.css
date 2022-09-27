@@ -38,10 +38,6 @@ h1{
 }
 
 .content_left{
-    /* margin-right:28px; */
-}
-
-.content_left{
     width:360px;
     background-color: white;
     flex-wrap: wrap;
@@ -156,12 +152,12 @@ button:hover{
     border-radius:inherit;
 }
 
-.left_output_list::-webkit-scrollbar,
-.total_content li::-webkit-scrollbar{
+.left_output_list::-webkit-scrollbar, 
+.total_list::-webkit-scrollbar{
     width:9px;
 }
-.left_output_list::-webkit-scrollbar-thumb, 
-.total_content li::-webkit-scrollbar-thu{ 
+.left_output_list::-webkit-scrollbar-thumb,
+.total_list::-webkit-scrollbar-thumb{ 
     height: 79px;
     background-clip: padding-box;
     border: 3.5px solid transparent;
@@ -169,18 +165,12 @@ button:hover{
     border-radius: 50px;
 }
 
-.total_content::after{
+.left_output_list::after{
     content: " ";
     display: block;
     border: 20px solid transparent;
-
 }
 
-.total_content::after{
-    content: " ";
-    display: block;
-    border: 500px solid transparent;
-}
 
 .cola{
     display: flex;
@@ -251,7 +241,7 @@ button:hover{
     font-size:14px;
 }
 
-.total_content>ul{
+.total_list{
     width:306px;
     height: 364px;
     padding:12px;
@@ -259,6 +249,7 @@ button:hover{
     background-color: #EAE8FE;
     list-style: none;
     overflow-y: scroll;
+    overflow-x:hidden ;
 }
 
 .total_content li{
@@ -271,4 +262,10 @@ button:hover{
     display: block;
     text-align: right;
     font-size: 12px;
+}
+
+.total_list::after{
+    content: " ";
+    display: block;
+    border: 500px solid transparent;
 }
