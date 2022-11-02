@@ -68,22 +68,26 @@ h1{
 }
 
 .left_goods>li:hover {
-    outline:3px solid #6327fe;
     cursor:pointer;
 }
 
-.left_goods figcaption{
-    margin:4px;
+.outline{
+    outline:3px solid #6327fe;
 }
 
 .left_goods button{
     font-size: 12px;
+    background-color: white;
+    border:0;
+}
+
+.left_goods .price{
     background-color: #6327fe;
     color:white;
     border-radius: 50px;
-    border:0;
     padding:3px 15px;
 }
+
 
 .left_data{
     display: grid;

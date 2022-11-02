@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="vending_machine.css">
+    
 </head>
 <body>
     <div class="wrapper">
@@ -17,47 +18,48 @@
         <main class="vending_machine_content">
             <div class="content_left">
                 <ul class="left_goods">
-                    <li>
-                        <figure>
-                            <img src="./img/콜라.png" alt="">
-                            <figcaption>Original_Cola</figcaption>
-                        </figure>
-                        <button>1000원</button>
+                    <li >
+                       
+                        <button class="goods">
+                            <img src="./img/콜라.png" alt="코카콜라">
+                            <span>Original_Cola</span>
+                            <span class="price">1000원</span>
+                        </button>
+                    </li>
+                    <li >
+                        <button class="goods">
+                            <img src="./img/콜라 (6).png" alt="포도맛 콜라">
+                            <span>Pulple_Cola</span>
+                            <span class="price">1000원</span>
+                        </button>
                     </li>
                     <li>
-                        <figure>
-                            <img src="./img/콜라 (6).png" alt="">
-                            <figcaption>Pulple_Cola</figcaption>
-                        </figure>
-                        <button>1000원</button>
+                        <button class="goods">
+                            <img src="./img/콜라 (1).png" alt="파인애플맛 콜라">
+                            <span>Yellow_Cola</span>
+                            <span class="price">1000원</span>
+                        </button>
                     </li>
                     <li>
-                        <figure>
-                            <img src="./img/콜라 (1).png" alt="">
-                            <figcaption>Yellow_Cola</figcaption>
-                        </figure>
-                        <button>1000원</button>
+                        <button class="goods">
+                            <img src="./img/콜라 (4).png" alt="뽕따맛 콜라">
+                            <span>Cool_Cola</span>
+                            <span class="price">1000원</span>
+                        </button>
                     </li>
                     <li>
-                        <figure>
-                            <img src="./img/콜라 (4).png" alt="">
-                            <figcaption>Cool_Cola</figcaption>
-                        </figure>
-                        <button>1000원</button>
+                        <button class="goods">
+                            <img src="./img/콜라 (2).png" alt="녹차맛 콜라">
+                            <span>Green Cola</span>
+                            <span class="price">1000원</span>
+                        </button>
                     </li>
                     <li>
-                        <figure>
-                            <img src="./img/콜라 (2).png" alt="">
-                            <figcaption>Green Cola</figcaption>
-                        </figure>
-                        <button>1000원</button>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="./img/콜라 (3).png" alt="">
-                            <figcaption>Orange Cola</figcaption>
-                        </figure>
-                        <button>1000원</button>
+                        <button class="goods">
+                            <img src="./img/콜라 (3).png" alt="오렌지맛 콜라">
+                            <span>Orange Cola</span>
+                            <span class="price">1000원</span>
+                        </button>
                     </li>
                 </ul>
                 <ul class="left_data">
@@ -69,10 +71,10 @@
                         <button class="left_data_returnbutton">거스름돈 반환</button>
                     </li>
                     <li>
-                        <input type="text" placeholder="입금액 입력"  class="left_data_input">
+                        <input type="text" placeholder="입금액 입력"  class="left_data_input" id="input_box">
                     </li>
                     <li>
-                        <button class="left_data_inputbutton"> 입금</button>
+                        <button class="left_data_inputbutton" id="input_btn"> 입금</button>
                     </li>
                 </ul>
                 <ul class="left_output">
@@ -97,7 +99,7 @@
                 <div class="money">
                     <div class="money_content">
                         <span class="money_content_key">소지금:</span>
-                        <span class="money_content_value">25,000 원</span>
+                        <span id="get_money" class="money_content_value">25,000 원</span>
                     </div>
                 </div>
                 <div class="total">
@@ -134,5 +136,7 @@
             </div>
         </main>
     </div>
+
+    <script src="./vending_machine.js"></script>
 </body>
 </html>
