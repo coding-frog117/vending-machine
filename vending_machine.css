@@ -71,7 +71,7 @@ h1{
     cursor:pointer;
 }
 
-.outline{
+.left_goods>li:active{
     outline:3px solid #6327fe;
 }
 
@@ -128,6 +128,7 @@ h1{
 button:hover{
     cursor:pointer;
 }
+
 .left_data_input{
     width:200px;
     padding:6px;
